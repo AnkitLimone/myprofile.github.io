@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<title>Ankit Limone Personal Site</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+
+		.navbar {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			position: sticky;
+			top: 0;
+			cursor: pointer;
+		}
+
+		.background {
+			background: #5289ff;
+			background-blend-mode: darken;
+			background-size: cover;
+		}
+
+		.nav-list {
+			font-family: 'Trebuchet MS', sans-serif;
+			width: 70%;
+			display: flex;
+			align-items: center;
+		}
+
+		.logo {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.logo img {
+			width: 70px;
+			border-radius: 100px;
+		}
+
+		.nav-list li {
+			list-style: none;
+			padding: 26px 20px;
+		}
+
+		.nav-list li a {
+			text-decoration: none;
+			color: White;
+		}
+
+		.nav-list li a:hover {
+			color: #002575;
+		}
+
+		.rightnav {
+			width: 30%;
+			text-align: right;
+		}
+
+		#search {
+			padding: 4px;
+			font-size: 17px;
+			border-radius:200px;
+ 			text-align: left;
+		}
+
+		.firstsection {
+			font-family: 'Trebuchet MS', sans-serif;
+			background-color: ;
+			height: 650px;
+		}
+
+		.secondsection {
+			font-family: 'Trebuchet MS', sans-serif;
+			background-color: #5289ff;
+			background-filter: blur(5px);
+			height: 400px;
+		}
+
+		.box-main {
+			
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			color: white;
+			max-width: 80%;
+			margin: auto;
+			height: 100%;
+		}
+
+		.firsthalf {
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+		}
+
+		.secondhalf {
+			width: 30%;
+		}
+
+		.secondhalf img {
+			width: 70%;
+			border: 4px solid white;
+			border-radius: 150px;
+			display: block;
+			margin: auto;
+		}
+
+		.text-big {
+			font-family: 'Trebuchet MS', sans-serif;
+			font-weight: bold;
+			font-size: 60px;
+		}
+
+		.text-small {
+			font-size: 28px;
+		}
+		.section {
+			height: 400px;
+			display: flex;
+			
+			align-items: center;
+			justify-content: center;
+			max-width: 90%;
+			margin: auto;
+		}
+
+		.section-Left {
+			flex-direction: row-reverse;
+		}
+
+		.paras {
+			padding: 0px 65px;
+			color: white;
+		}
+
+		.thumbnail img {
+			width: 250px;
+			border: 2px white;
+			border-radius: 26px;
+			margin-top: 19px;
+			
+		}
+
+		.center {
+			text-align: center;
+		}
+
+		.text-footer {
+			text-align: center;
+			padding: 10px 0;
+			font-family: 'Ubuntu', sans-serif;
+			display: flex;
+			justify-content: center;
+			color: #fff;
+			font-size: 10px;
+		}
+	
+
+		.btn {
+  			background-color: #5289ff;
+ 			color: #fff;
+  			cursor: pointer;
+  			font-size: 15px;
+  			font-weight: 100;
+  			line-height: 1;
+  			margin: 5px;
+  			padding: 4px 12px;
+  			text-decoration: none;
+  			text-align: center;
+  			text-transform: none;
+  			font-family: 'Montserrat', sans-serif;
+  			font-weight: 700;
+			}
+		.btn:hover, .btn:focus {
+  			color: #fff;
+  			outline: 0;
+			}
+
+
+		.search {
+  			border: 2px solid #5289ff;
+  			border-color: #5289ff;
+    			border-radius:100px;
+  			color: #fff;
+  			box-shadow: 0 0 40px 40px #5289ff  inset, 0 0 0 0 #5289ff ;
+  			-webkit-transition: all 150ms ease-in-out;
+  			transition: all 150ms ease-in-out;
+			}
+		.search:hover {
+ 			 box-shadow: 0 0 10px 0 #002a85 inset, 0 0 10px 4px #002a85;
+		}
+		
+
+		body {
+  			background-image: url('bg.jpg');
+  			background-repeat: no-repeat;
+  			background-attachment: fixed;  
+  			background-size: cover;
+  			backdrop-filter: blur(5px);
+  			font-size: 30px;
+			}
+		.social-buttons{
+				text-align: center;
+				}
+		
+		.fa {
+  			padding: 5px;
+  			font-size: 30px;
+  			width: 30px;
+  			text-align: center;
+  			text-decoration: none;
+  			margin: 12px 4px;
+  			border-radius: 50%;
+			text-align: center;
+			}
+
+		.fa:hover {
+    			opacity: 0.7;
+			}
+
+		.fa-facebook {
+  			background: #3B5998;
+  			color: white;
+			}
+
+		.fa-twitter {
+  			background: #55ACEE;
+  			color: white;
+			}
+
+		.fa-google {
+  			background: #dd4b39;
+  			color: white;
+			}
+
+		.fa-linkedin {
+  			background: #007bb5;
+  			color: white;
+			}
+
+
+		.fa-instagram {
+  			background: #f5428a;
+  			color: white;
+			}
+
+
+	</style>
+</head>
+
+<body>
+	<nav class="navbar background">
+		<ul class="nav-list">
+			<div class="logo">
+				<img src= "Ankit pic.jpg">
+			</div>
+			<li><a href="#web">MySelf</a></li>
+			<li><a href="#program">Education</a></li>
+			<li><a href="#course">Courses</a></li>
+			<li><a href="file:///C:/Users/Ankit%20Limone/Desktop/Mysite/About%20page.html">About</a></li>
+		</ul>
+
+		<div class="rightNav">
+			<input type="text" name="search" id="search">
+			<button class="btn search">Search</button>
+		</div>
+	</nav>
+
+	<section class="firstsection">
+		<div class="box-main">
+			<div class="firstHalf">
+				<h1 class="text-big" id="web">My Self</h1>
+				<p class="text-small">
+					Hello Guys! I am Ankit Limone.A student of M.tech (IT).My Hometown is Khargone 150kms From Indore.
+					I am 20 years old.My hobbies are Playing Video Games, Cricket , Browsing Internet, watching Youtube Videos ETC.
+				</p>
+				
+			</div>
+		</div>
+	</section>
+
+	<section class="secondsection">
+		<div class="box-main">
+			<div class="firstHalf">
+				<h1 class="text-big" id="program">
+					Educational History
+				</h1>
+				<p class="text-small">
+					<li> Schooling At Aaditya Vidhya Vihar Higher  Secondary School Khargone (M.P)</li>
+					<li>Nursery To 12th</li>
+                    			<li> College At International Institute Of Professional Studies Davv Indore (M.P) </li> 
+					<li>Persuing M.TECH (IT) 2nd Year </li>
+				</p>
+			</div>
+		</div>
+	</section>
+
+	<section class="section">
+		<div class="paras">
+			<h1 class="sectionTag text-big">Courses That I have Done</h1>
+
+			<p class="sectionSubTag text-small">
+				<li>Google Digital Marketing</li>
+				<li>Guvi Python</li>
+				<li>Solo Learn</li>
+ 				<li>Machine Learning</li>
+				<li>Career Prep Bootcamp</li>
+				<li>C Language</li>
+				<li>HTML Fundamentals</li>
+				<li>React + Redux </li>
+			</p>
+		</div>
+
+		<div class="thumbnail">
+			<img src= "kk.png" alt="Errortb">
+		</div>
+	</section>
+
+	<footer class="background">
+				
+	</p>
+	<p class="social-buttons">	
+	<a href="https://www.facebook.com/ankit.limone.5" target="_blank" class="fa fa-facebook"></a>
+	<a href="https://twitter.com/ankitlimone2" target="_blank" class="fa fa-twitter"></a>
+	<a href="https://www.google.com/search?q=ankit+limone&oq=a&aqs=chrome.0.69i59l3j46i67i275j69i60l3j69i65.1041j0j7&sourceid=chrome&ie=UTF-8" target="_blank" class="fa fa-google"></a>
+	<a href="https://in.linkedin.com/in/ankit-limone-381206180" target="_blank" class="fa fa-linkedin"></a>
+	<a href="https://www.instagram.com/ak_demonimmortal/" target="_blank" class="fa fa-instagram"></a>
+	</p>
+
+	<p class="text-footer">
+			Copyright © Developed by :-
+		<a href="https://in.linkedin.com/in/ankit-limone-381206180" target="_blank"> Ankit Limone </a>
+	</footer>
+</body>
+
+</html>
